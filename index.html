@@ -9,19 +9,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles/style.css">
-
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="./assets/fonts/style.css">
 
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- SCRIPTS -->
     <script src="./scripts/main.js" defer></script>
 
 </head>
@@ -30,7 +36,7 @@
     <div class="content">
         <header id="header" class="container">
             <nav class="">
-                <a class="logo" href="#">beauty<span>salon</span><span>.</span></a>
+                <a class="logo" href="/">beauty<span>salon</span><span>.</span></a>
                 <div class="menu">
                     <ul>
                         <li><a class="title" href="#home">Início</a></li>
@@ -126,7 +132,141 @@
                     
                 </div>
             </section>
+
+            <div class="divider-1"></div>
+
+            <div class="section" id="testimonials">
+                    <header>
+                        <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+                    </header>
+                    <div class="swiper-container">
+                        <div class="carousel swiper-wrapper">
+                            <div class="testimonial-wrapper swiper-slide">
+                                <blockquote>
+                                    <div class="text">
+                                        <span>&ldquo;</span><p>
+                                            Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados. 
+                                        </p>
+                                    </div>
+                                    <cite>
+                                        <img src="./assets/images/vanessa-souza.png" alt="Foto de Vanessa Souza">
+                                        Vanessa Souza
+                                    </cite>
+                                </blockquote>
+                            </div>
+
+                            <div class="testimonial-wrapper swiper-slide">
+                                <blockquote>
+                                    <div class="text">
+
+                                    <span>&ldquo;</span><p>
+                                            Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon. 
+                                        </p>
+                                    </div>
+
+                                    <cite>
+                                        <img src="./assets/images/luna-falcao.png" alt="Foto de Luna Falcão">
+                                        Luna Falcão
+                                    </cite>
+                                </blockquote>
+                            </div>
+
+                            <div class="testimonial-wrapper swiper-slide">
+                                <blockquote>
+                                    <div class="text">
+                                        <span>&ldquo;</span><p>
+                                            Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados. 
+                                        </p>
+                                    </div>
+                                    <cite>
+                                        <img src="./assets/images/vanessa-souza.png" alt="Foto de Vanessa Souza">
+                                        Vanessa Souza
+                                    </cite>
+                                </blockquote>
+                            </div>
+
+                            <div class="testimonial-wrapper swiper-slide">
+                                <blockquote>
+                                    <div class="text">
+
+                                    <span>&ldquo;</span><p>
+                                            Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon. 
+                                        </p>
+                                    </div>
+
+                                    <cite>
+                                        <img src="./assets/images/luna-falcao.png" alt="Foto de Luna Falcão">
+                                        Luna Falcão
+                                    </cite>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+
+            <div class="divider-2"></div>
+
+            <div class="section" id="contact">
+                <div class="container">
+                    <header>
+                        <h2 class="title">Entre em contato com a gente!</h2>
+
+                        <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>    
+                    </header>
+
+                    <div class="links">
+                        <a class="button" href="https://api.whatsapp.com/send?phone=+5555997124648&text=Oi! Gostaria de agender um horário" target="blank">
+                            <i class="icon-whatsapp"></i>
+                            Entrar em contato
+                        </a>
+
+                        <ul>
+                            <li>
+                                <i class="icon-phone"></i>
+                                11 99845-6754
+                            </li>
+
+                            <li>
+                                <i class="icon-map-pin"></i>
+                                R. Amauri Souza, 346
+                            </li>
+
+                            <li>
+                                <i class="icon-mail"></i>
+                                contato@beautysalon.com
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </main>
+
+        <footer id="footer">
+            <a class="logo" href="/">beauty<span style="color: var(--background-1)">salon</span><span>.</span></a>
+
+            <div class="text">
+                <p>©2021 Beautysalon.</p>
+
+                <p>Todos os direitos reservados.</p>
+            </div>
+
+            <div class="links">
+                <a href="">
+                    <i class="icon-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="icon-facebook"></i>
+                </a>
+
+                <a href="">
+                    <i class="icon-youtube"></i>
+                </a>
+            </div>
+        </footer>
     </div>
 </body>
 
