@@ -72,4 +72,4 @@
 ### 🤓 Autor
 <br>
 
-<p align="center"> Made with 🧡 and madness by Thalysson 🥛<a target="blank" href="https://www.google.com/search?q=milk+in+portuguese&oq=milk+in+portuguese&aqs=chrome..69i57.4303j0j1&sourceid=chrome&ie=UTF-8">(click here if you are not brazilian)</a></p>
+<p align="center"> Made with 🧡 and madness by Thalysson 🥛 <a target="blank" href="https://www.google.com/search?q=milk+in+portuguese&oq=milk+in+portuguese&aqs=chrome..69i57.4303j0j1&sourceid=chrome&ie=UTF-8">(click here if you are not brazilian)</a></p>
