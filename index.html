@@ -47,8 +47,10 @@
                     </ul>
                 </div>
 
-                <div class="toggle icon-menu"></div>
-                <div class="toggle icon-close"></div>
+                <div class="header-icons">
+                    <div class="toggle icon-menu"></div>
+                    <div class="toggle icon-close"></div>
+                </div>
             </nav>
         </header>
 
@@ -56,8 +58,7 @@
             <section class="section" id="home">
                 <div class="container">
                     <div class="image">
-                        <img src="./assets/images/home-image.svg"
-                            alt="Profissional cortando cabelo de uma cliente em um ambiente exclusivo e organizado">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Profissional cortando cabelo de uma cliente em um ambiente exclusivo e organizado">
                     </div>
 
                     <div class="text">
@@ -73,7 +74,7 @@
             <section class="section" id="about">
                 <div class="container">
                     <div class="image">
-                        <img src="./assets/images/about-image.jpg" alt="3 cabelereiras sorrindo">
+                        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="3 cabelereiras sorrindo">
                     </div>
                     <div class="text">
                         <h2 class="title">Sobre nós</h2>
@@ -95,7 +96,7 @@
                     <header>
                         <h2 class="title">Serviços</h2>
 
-                        <p>Com mais de 10 anos no mercado, o <span>Beautysalon</span> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+                        <p class="subtitle">Com mais de 10 anos no mercado, o <span>Beautysalon</span> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
                     </header>
 
                     <div class="cards">
@@ -103,7 +104,7 @@
                             <div class="icon-woman-hair icon"></div>
                             
                             <div class="text">
-                                <h3 class="subtitle">Terapia Capilar</h3>
+                                <h3 class="card-subtitle">Terapia Capilar</h3>
 
                                 <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
                             </div>
@@ -113,7 +114,7 @@
                             <div class="icon-trim icon"></div>
                             
                             <div class="text">
-                                <h3 class="subtitle">Cortes</h3>
+                                <h3 class="card-subtitle">Cortes</h3>
 
                                 <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
                             </div>
@@ -123,7 +124,7 @@
                             <div class="icon-cosmetic icon"></div>
                             
                             <div class="text">
-                                <h3 class="subtitle">Tratamento</h3>
+                                <h3 class="card-subtitle">Tratamento</h3>
 
                                 <p>O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.</p>
                             </div>
@@ -135,7 +136,8 @@
 
             <div class="divider-1"></div>
 
-            <div class="section" id="testimonials">
+            <section class="section" id="testimonials">
+                <div class="container">
                     <header>
                         <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                     </header>
@@ -204,24 +206,25 @@
 
                         <div class="swiper-pagination"></div>
                     </div>
-            </div>
+                </div>
+            </section>
 
             <div class="divider-2"></div>
 
-            <div class="section" id="contact">
+            <section class="section" id="contact">
                 <div class="container">
                     <header>
                         <h2 class="title">Entre em contato com a gente!</h2>
 
-                        <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>    
-                    </header>
-
-                    <div class="links">
+                        <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>   
+                        
                         <a class="button" href="https://api.whatsapp.com/send?phone=+5555997124648&text=Oi! Gostaria de agender um horário" target="blank">
                             <i class="icon-whatsapp"></i>
                             Entrar em contato
                         </a>
+                    </header>
 
+                    <div class="links">
                         <ul>
                             <li>
                                 <i class="icon-phone"></i>
@@ -241,32 +244,42 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer id="footer">
-            <a class="logo" href="/">beauty<span style="color: var(--background-1)">salon</span><span>.</span></a>
+            <div class="container">
+                <div class="text">
+                    <a class="logo" href="#home">beauty<span style="color: var(--background-1)">salon</span><span>.</span></a>
 
-            <div class="text">
-                <p>©2021 Beautysalon.</p>
-
-                <p>Todos os direitos reservados.</p>
-            </div>
-
-            <div class="links">
-                <a href="">
-                    <i class="icon-instagram"></i>
-                </a>
-
-                <a href="">
-                    <i class="icon-facebook"></i>
-                </a>
-
-                <a href="">
-                    <i class="icon-youtube"></i>
-                </a>
+                    <p>©2021 Beautysalon.</p>
+            
+                    <p>Todos os direitos reservados.</p>
+                </div>
+            
+                <div class="links">
+                    <a href="https://instagram.com" target="blank">
+                        <i class="icon-instagram"></i>
+                    </a>
+            
+                    <a href="https://facebook.com" target="blank">
+                        <i class="icon-facebook"></i>
+                    </a>
+            
+                    <a href="https://youtube.com" target="blank">
+                        <i class="icon-youtube"></i>
+                    </a>
+                </div>
             </div>
         </footer>
+        
+        <a class="back-to-top" href="#home">
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <i class="icon-arrow-up"></i>
+                </div>
+            </div>
+        </a>
     </div>
 </body>
 

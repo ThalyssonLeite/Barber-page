@@ -21,6 +21,14 @@ ul {
     list-style: none;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 /*===== VARIABLES =====*/
 :root {
     --hue: 159;
@@ -32,6 +40,8 @@ ul {
     --secondary-color: hsl(var(--hue), 65%, 88%);
     --background-1: hsl(0, 0%, 98%);
     --background-2: hsl(0, 0%, 100%);
+
+    --title-font-size: 3rem;
 
     font-size: 62.5%;
 
@@ -60,13 +70,13 @@ main {
 }
 
 .title {
-    font: 700 3rem Poppins, sans-serif;
+    font: 700 var(--title-font-size) Poppins, sans-serif;
     color: var(--dark);
     margin-bottom: 1.6rem;
     -webkit-font-smoothing: auto;
 }
 
-.subtitle {
+.card-subtitle {
     font: 700 2.4rem Poppins, sans-serif;
     color: var(--dark);
     margin-bottom: 1.2rem;
@@ -158,11 +168,17 @@ nav .menu {
     visibility: hidden;
     opacity: 0;
     position: fixed;
+    top: -20rem;
 }
 
-nav .menu ul li a {
+nav ul li a {
     transition: color 0.2s;
     position: relative;
+}
+
+nav ul li a.active,
+nav .menu ul li a:hover {
+    color: var(--primary-color);
 }
 
 nav ul li a::after {
@@ -172,19 +188,17 @@ nav ul li a::after {
     background: var(--primary-color);
 
     position: absolute;
-    bottom: -2.4rem;
+    bottom: -2.55rem;
     left: 0;
 
     transition: width 0.2s;
 }
 
+nav ul li a.active::after,
 nav ul li a:hover::after {
     width: 100%;
 }
 
-nav .menu ul li a:hover {
-    color: var(--primary-color);
-}
 
 nav.show .menu {
     visibility: visible;
@@ -257,7 +271,7 @@ nav.show div.icon-close {
 
 #home .image::before {
     content: '';
-    width: 100%;
+    width: 89%;
     height: 100%;
     background: var(--secondary-color);
     position: absolute;
@@ -313,7 +327,7 @@ nav.show div.icon-close {
 #about .image::before {
     content: '';
     width: 100%;
-    height: 100%;
+    height: 70%;
     background: var(--secondary-color);
     position: absolute;
     top: -8.4%;
@@ -334,8 +348,9 @@ nav.show div.icon-close {
 }
 
 #about .text p {
-    margin-bottom: 3.2rem;
-    line-height: 2.6rem;
+    margin-bottom: 3rem;
+    font: 400 1.6rem 'DM Sans', sans-serif;
+    line-height: 2.4rem;
 }
 
 /*===== SERVICES =====*/
@@ -480,13 +495,16 @@ nav.show div.icon-close {
 }
 
 #contact header{
+    margin-bottom: 6.4rem;
+}
+
+#contact header p {
     margin-bottom: 3.2rem;
 }
 
-#contact .links a {
+#contact header a {
     display: inline-block;
-    margin-bottom: 6.4rem;
-
+    
     padding: 1.8rem 3.2rem;
     background: var(--primary-color);
     border-radius: 0.4rem;
@@ -519,7 +537,7 @@ nav.show div.icon-close {
     background: var(--primary-color);
 }
 
-#footer a.logo {
+#footer .text a.logo {
     display: inline-block;
     margin-bottom: 2.4rem;
 }
@@ -529,18 +547,167 @@ nav.show div.icon-close {
     margin-bottom: 3.2rem;
 }
 
-#footer .text p:nth-child(1) {
+#footer .text p:nth-child(2) {
     margin-bottom: 1.2rem;
 }
 
 #footer .links a i {
     color: var(--background-1);
     font-size: 2.4rem; 
+
+    display: inline-block;
+    transition: 0.2s;
 }
+
+#footer .links a i:hover {
+    transform: translateY(-0.8rem) scale(1.2);
+}
+
 
 #footer .links a:nth-child(1),
 #footer .links a:nth-child(2) {
     margin-right: 3.2rem;
 }
 
-/*===== SCROLLREVEAL =====*/
+/*===== BACK-TO-TOP =====*/
+.back-to-top {
+    position: fixed;
+    right: 1.6rem;
+    bottom: 1.6rem;
+
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-top.show {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top .outer-circle {
+    background: var(--dark);
+    padding: 0.2rem;
+    clip-path: circle();
+}
+
+.back-to-top .inner-circle {
+    background: var(--secondary-color);
+    padding: 1rem;
+    clip-path: circle();
+}
+
+.back-to-top .inner-circle i {
+    color: var(--dark);
+}
+
+/*===== RESPONSIVE =====*/
+/* extra large devices: 1200px */
+@media (min-width: 1200px) {
+    .section {
+        padding: 16rem 0;
+    }
+
+    .container {
+        padding: 0 12.3rem;
+    }
+
+    nav .menu {
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+        position: static;
+    }
+
+    nav .menu ul{
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    nav .menu ul li a{
+        font: 400 1.6rem 'DM Sans', sans-serif;
+    }
+
+    #header .header-icons {
+        display: none;
+    }
+
+    /* HOME */
+    #home .container {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        padding: 0 12.3rem;
+    }
+
+    #home .image {
+        order: 1;
+    }
+
+    #home .container .text {
+        order: 0;
+        text-align: left;
+        padding: 0;
+        max-width: 39.6rem;
+    }
+
+    #home .container .text .button{
+        height: 5rem;
+    }
+
+    /* ABOUI */
+    #about .container {
+        grid-auto-flow: column;
+        margin: 0 auto;
+    }
+
+    #about .container .image {
+        display: flex;
+        align-items: center;
+    }
+
+    #about .container .image::before {
+        top: 0;
+    }
+
+    /* SERVICES */
+    #services header {
+        max-width: 52.3rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #services .cards {
+        display: flex;
+    }
+
+    /* TESTIMONIALS */
+    #testimonials header {
+        max-width: 48.1rem;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* CONTACT */
+    #contact .container {
+        display: flex;
+        align-items: center;
+    }
+
+    #contact .container header {
+        max-width: 40.4rem;
+        margin-right: 26.8rem;
+    }
+
+    /* FOOTER */
+    #footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
