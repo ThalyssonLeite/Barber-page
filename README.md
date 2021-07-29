@@ -31,6 +31,18 @@
 
 <p> Você pode fazer o download do projeto aqui mesmo pelo github. Basta clilcar no botão verde "Code", em seguida, "Download zip". Extraia na pasta desejada e abra o arquivo index.html (seu navegador padrão deve abrir o site).</p>
 
-<p align="center">Desktop</p>
+<br><br>
+
+<p align="center" style="font-weight: bold">Desktop</p>
 
 <img alt="desktop presentation" src="./github/desktopPresentation.gif">
+
+<br><br>
+
+<p align="center" style="font-weight: bold">Mobile</p>
+
+<p align="center">
+
+<img alt="desktop presentation" src="./github/mobilePresentation.gif">
+
+
