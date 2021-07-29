@@ -25,7 +25,7 @@
 
 ---
 
-<br>
+<br><br>
 
 ### 🎲 Rodando no navegador
 
@@ -45,4 +45,31 @@
 
 <img alt="desktop presentation" src="./github/mobilePresentation.gif">
 
+<br><br>
 
+---
+### ⚙ Tecnologias
+
+- HTML
+- CSS
+- JavaSctipt
+
+<br><br>
+
+---
+### 🎨 Paleta de cores
+
+<br><br>
+
+<p align="center" style="font-weight: bold">Projeto Altamente adaptável</p>
+
+<img alt="desktop presentation" src="./github/hueControll.gif">
+
+<br><br>
+
+---
+
+### 🤓 Autor
+<br>
+
+<p align="center"> Made with 🧡 and madness by Thalysson <a href="https://www.google.com/search?q=milk+in+portuguese&oq=milk+in+portuguese&aqs=chrome..69i57.4303j0j1&sourceid=chrome&ie=UTF-8">🥛 (click here if you are not brazilian)</a></p>

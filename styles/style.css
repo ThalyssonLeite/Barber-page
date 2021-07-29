@@ -31,7 +31,7 @@ a {
 
 /*===== VARIABLES =====*/
 :root {
-    --hue: 159;
+    --hue: 0;
 
     --dark: hsl(var(--hue), 41%, 10%);
     --gray: hsl(0, 0%, 46%, 1);
