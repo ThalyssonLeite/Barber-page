@@ -27,7 +27,7 @@
 
 <br>
 
-#### 🎲 Rodando no navegador
+#### Rodando no navegador
 
 <p> Você pode fazer o download do projeto aqui mesmo pelo github. Basta clilcar no botão verde "Code", em seguida, "Download ZIP". Extraia na pasta desejada e abra o arquivo index.html (seu navegador padrão deve abrir o site).</p>
 
@@ -48,7 +48,7 @@
 <br><br>
 
 ---
-#### ⚙ Tecnologias
+#### Tecnologias
 
 - HTML
 - CSS
@@ -57,7 +57,7 @@
 <br><br>
 
 ---
-#### 🎨 Paleta de cores
+#### Paleta de cores
 
 <br><br>
 
@@ -69,7 +69,7 @@
 
 ---
 
-#### 🤓 Autor
+#### Autor
 <br>
 
 <p align="center"> Made with 🧡 and madness by Thalysson 🥛 <a href="https://www.google.com/search?q=milk+in+portuguese&oq=milk+in+portuguese&aqs=chrome..69i57.4303j0j1&sourceid=chrome&ie=UTF-8">(click here if you are not brazilian)</a></p>
