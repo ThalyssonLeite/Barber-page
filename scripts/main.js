@@ -62,31 +62,31 @@ window.addEventListener('scroll', () => {
     changeHeaderWhenScroll();
     changeBackToTopButton();
 
-    //if (largeScreen) {
+
     activateMenuAtCurrentSection();
-    //}
+    
 });
 
-//TESTIMONIAL SWIPER LIB
-const largeScreen = screen.width >= 990;
+//SWIPER LIB
+const swiper = new Swiper('.swiper', {
 
-function slidesPerDeviceWidth() {
-
-    if (largeScreen) {
-        return 2
-    } else {
-        return 1
-    }
-}
-
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: slidesPerDeviceWidth(),
     pagination: {
-        el: '.swiper-pagination'
+      el: '.swiper-pagination',
     },
-    mousewheel: true,
-    keyboard: true,
-})
+
+    breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        },
+    },
+
+    grabCursor: "true",
+
+    keyboard: {
+        enabled: "true"
+    }
+});
 
 //SCROLLREVEAL LIB
 const scrollReveal = ScrollReveal({

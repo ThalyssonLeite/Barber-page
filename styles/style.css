@@ -419,6 +419,7 @@ nav.show div.icon-close {
 /*===== SERVICES =====*/
 #testimonials {
     background: var(--background-2);
+    overflow: hidden;
 }
 
 #testimonials header {
@@ -430,10 +431,12 @@ nav.show div.icon-close {
 }
 
 #testimonials .carousel .testimonial-wrapper blockquote {
-    padding: 3.2rem;
+    padding: 3.2rem 3.2rem 6.4rem 3.2rem;
     box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.08);
     border-radius: 0.4rem;
     margin-bottom: 3.2rem;
+    height: 100%;
+    position: relative;
 }
 
 #testimonials .carousel .testimonial-wrapper .text {
@@ -465,6 +468,8 @@ nav.show div.icon-close {
 
     font: 400 1.6rem 'DM Sans', sans-serif;
     color: var(--gray);
+    position: absolute;
+    bottom: 3.2rem;
 }
 
 #testimonials .carousel .testimonial-wrapper cite img {
