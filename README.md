@@ -2,9 +2,6 @@
 
 <p align="center">A barber's page, but can be easely modified to adequate for other purporses.</p>
 
-<strong><p align="center"><a href="https://mettcertificados.com.br">Veja uma aplicação real desse site</a></p></strong>
-<strong><p align="center"><a href="https://mettcertificados.com.br">See a real aplication for this site</a></p></strong>
-
 <p align="center">
     <a href="#features">Features</a> •
     <a href="#rodando-no-navegador">Rodando no navegador</a> •
